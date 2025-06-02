@@ -4,14 +4,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Development Commands
 
-### Frontend (React + TypeScript + Vite)
-
-- `pnpm dev` - Start development server on port 1420
-- `pnpm build` - Build production frontend (runs TypeScript compiler then Vite build)
-- `pnpm preview` - Preview production build
-
-### Tauri (Desktop App)
-
 - `pnpm tauri dev` - Start Tauri development mode (builds both frontend and Rust backend)
 - `pnpm tauri build` - Build production Tauri app
 

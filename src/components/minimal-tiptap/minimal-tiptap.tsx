@@ -1,6 +1,7 @@
 import "./styles/index.css";
 
 import { Separator } from "@/components/ui/separator";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import type { Content, Editor } from "@tiptap/react";
 import { EditorContent } from "@tiptap/react";
@@ -62,6 +63,9 @@ const Toolbar = ({ editor }: { editor: Editor }) => (
 				mainActionCount={0}
 			/>
 		</div>
+		<div className="ml-auto">
+			<ThemeToggle />
+		</div>
 	</div>
 );
 
@@ -87,15 +91,15 @@ export const MinimalTiptapEditor = ({
 			as="div"
 			name="editor"
 			className={cn(
-				"border-input focus-within:border-primary min-data-[orientation=vertical]:h-72 flex h-auto w-full flex-col rounded-md border shadow-xs",
+				"border-input focus-within:border-primary min-data-[orientation=vertical]:h-72 flex h-auto w-full flex-col rounded-md ",
 				className,
 			)}
 		>
-			<Toolbar editor={editor} />
 			<EditorContent
 				editor={editor}
 				className={cn("minimal-tiptap-editor", editorContentClassName)}
 			/>
+			<Toolbar editor={editor} />
 			<LinkBubbleMenu editor={editor} />
 		</MeasuredContainer>
 	);
