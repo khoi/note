@@ -64,13 +64,7 @@
 		"vite": "^6.0.3"
 	},
 	"pnpm": {
-		"ignoredBuiltDependencies": [
-			"@biomejs/biome"
-		],
-		"onlyBuiltDependencies": [
-			"@biomejs/biome",
-			"@tailwindcss/oxide",
-			"esbuild"
-		]
+		"ignoredBuiltDependencies": ["@biomejs/biome"],
+		"onlyBuiltDependencies": ["@biomejs/biome", "@tailwindcss/oxide", "esbuild"]
 	}
 }
